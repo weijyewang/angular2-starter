@@ -12,11 +12,12 @@ var core_1 = require('@angular/core');
 var AppComponent = (function () {
     function AppComponent() {
         this.name = 'Angular';
+        this.excitementLevel = 100;
     }
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "\n    <h1>Hello {{name}}</h1>\n    <h2>Experiment conducted by RobertTSLee and weijyewang</h2>\n    <h4>Stay tuned for more!</h4>\n  ",
+            template: "\n    <h1>Hello {{name}}</h1>\n    <h2>Experiment conducted by RobertTSLee and weijyewang</h2>\n    <h4>Stay tuned for more!</h4>\n    <h4>Excitement Level: {{excitementLevel}} %</h4>\n  ",
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
