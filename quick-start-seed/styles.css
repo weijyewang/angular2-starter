@@ -1,17 +1,52 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #282828;
+  margin: 0;
+}
+
+ul.nav-bar {
+  overflow: hidden;
+  list-style-type: none; /* Remove the bullets */
+  /* Remove browser default settings */
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  background-color: #CC181E;
+}
+
+ul.nav-bar > li {
+  float: left;
+}
+
+ul.nav-bar > li > a {
+  display: block;
+  background-color: #CC181E;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  min-width: 60px;
+  height: 20px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.nav-bar > li > a:hover {
+  background-color: #af151a;
+}
+
 h1 {
   color: #369;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 250%;
 }
 
 h2 {
   color: #313131;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 180%;
 }
 
 h4 {
   color: #ae1235;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 200%;
 }
