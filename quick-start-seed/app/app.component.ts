@@ -4,8 +4,8 @@ import { Component } from '@angular/core';
   selector: 'my-app',
   templateUrl: 'app/app.component.html'
 })
-export class AppComponent  { 
-  class='absolute';
-  name = 'Angular'; 
+export class AppComponent  {
+  class = 'absolute';
+  name = 'Angular';
   excitementLevel = 100;
 }
