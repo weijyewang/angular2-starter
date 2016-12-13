@@ -12,7 +12,8 @@ ul.nav-bar {
   margin: 0;
   padding: 0;
   width: 100vw;
-  background-color: #CC181E;
+  background-color: #cd201f;
+  box-shadow: 0 3px 13px rgba(0, 0, 0, 0.4), -2px -7px 30px rgba(0, 0, 0, 0.15) inset;
 }
 
 ul.nav-bar > li {
@@ -21,19 +22,31 @@ ul.nav-bar > li {
 
 ul.nav-bar > li > a {
   display: block;
-  background-color: #CC181E;
+  /*background-color: #cd201f;*/
   color: #fff;
-  font-weight: 600;
-  font-size: 16px;
-  min-width: 60px;
-  height: 20px;
+  font-weight: 500;
+  font-size: 15px;
+  min-width: 40px;
   text-align: center;
-  padding: 14px 16px;
+  padding: 12px 14px;
   text-decoration: none;
 }
 
 ul.nav-bar > li > a:hover {
-  background-color: #af151a;
+  /*background-color: #b31217;*/
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.logo-container {
+  padding: 8px 5px 0 15px;
+}
+
+ul.nav-bar > li.app-title > a {
+  padding-left: 0;
+  padding-top: 10px;
+  padding-right: 60px;
+  font-weight: 600;
+  font-size: 17px;
 }
 
 h1 {
