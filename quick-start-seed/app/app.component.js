@@ -11,10 +11,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require("@angular/core");
 var AppComponent = (function () {
     function AppComponent() {
-        this.class = 'absolute';
         this.name = 'Angular';
-        this.excitementLevel = 100;
+        this.excitementLevel = 200;
     }
+    AppComponent.prototype.myFunction = function () {
+        var x = document.getElementById("navBar");
+        if (x.className === "nav-bar") {
+            x.className += " responsive";
+        }
+        else {
+            x.className = "nav-bar";
+        }
+    };
     return AppComponent;
 }());
 AppComponent = __decorate([

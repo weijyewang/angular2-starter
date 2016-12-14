@@ -1,5 +1,5 @@
 <nav>
-  <ul class="nav-bar">
+  <ul class="nav-bar" id="navBar">
     <li class="logo-container"><img src="app/images/mockingjay-logo.png" width="30" height="30"></li>
     <li class="app-title"><a href="#">Mockingjay</a></li>
     <li><a href="#">Create Record</a></li>
@@ -7,11 +7,14 @@
     <li><a href="#">Planning</a></li>
     <li><a href="#">Board</a></li>
     <li><a href="#">Dashboard</a></li>
-    <li><a href="#">Others</a></li>
+    <li><a href="#">Others<i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
+    <li class="icon">
+      <a href="#" style="font-size:15px;" (click)="myFunction()">☰</a>
+    </li>
   </ul>
 </nav>
 
-<div class={{class}}>
+<div>
     <h1>Hello {{name}}</h1>
     <h2>Experiment conducted by RobertTSLee and weijyewang</h2>
     <h4>Stay tuned for more!</h4>

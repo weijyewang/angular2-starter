@@ -33,7 +33,6 @@ ul.nav-bar > li > a {
 }
 
 ul.nav-bar > li > a:hover {
-  /*background-color: #b31217;*/
   background-color: rgba(0, 0, 0, 0.15);
 }
 
@@ -48,6 +47,67 @@ ul.nav-bar > li.app-title > a {
   font-weight: 600;
   font-size: 17px;
 }
+
+ul.nav-bar > li.app-title > a:hover {
+  background-color: transparent;
+}
+
+.nav-bar .fa {
+  margin-left: 8px;
+}
+
+.nav-bar .icon {
+  display: none;
+}
+
+/*
+ * When the screen is less than 680 pixels wide, hide all list items, except for the
+ * first one ("Home"). Show the list item that contains the link to open and close the
+ * topnav (li.icon)
+ */
+@media screen and (max-width:760px) {
+  .nav-bar li:not(:first-child):not(:nth-child(2)):not(:last-child) {display: none;}
+  .nav-bar li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+/*
+ * The 'responsive' class is added to the navigation bar with JavaScript when the user click
+ * on the icon. This class makes the navigation bar look good on small screens.
+ */
+@media screen and (max-width:760px) {
+  .nav-bar.responsive {position: relative;}
+  .nav-bar.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav-bar.responsive li:not(:first-child):not(.icon) {
+    float: none;
+    display: inline;
+  }
+  .nav-bar.responsive li a {
+    display: block;
+    text-align: left;
+  }
+  .nav-bar.responsive li.icon a {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  ul.nav-bar#navBar  li.app-title {
+    display: none;
+  }
+
+  ul.nav-bar#navBar  li.logo-container {
+    display: inline-block;
+    float: none;
+  }
+}
+
 
 h1 {
   color: #369;

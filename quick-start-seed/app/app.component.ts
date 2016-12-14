@@ -5,7 +5,14 @@ import { Component } from '@angular/core';
   templateUrl: 'app/app.component.html'
 })
 export class AppComponent  {
-  class = 'absolute';
   name = 'Angular';
-  excitementLevel = 100;
+  excitementLevel = 200;
+  myFunction() {
+    const x = document.getElementById("navBar");
+    if (x.className === "nav-bar") {
+      x.className += " responsive";
+    } else {
+      x.className = "nav-bar";
+    }
+  }
 }
