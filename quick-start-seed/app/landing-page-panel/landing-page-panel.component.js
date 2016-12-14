@@ -9,19 +9,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var AppComponent = (function () {
-    function AppComponent() {
-        this.name = 'Angular';
-        this.excitementLevel = 200;
+var LandingPagePanelComponent = (function () {
+    function LandingPagePanelComponent() {
+        this.icon = '';
+        this.title = 'bla';
+        this.description = '';
     }
-    return AppComponent;
+    return LandingPagePanelComponent;
 }());
-AppComponent = __decorate([
+LandingPagePanelComponent = __decorate([
     core_1.Component({
-        selector: 'my-app',
-        templateUrl: 'app/app.component.html'
+        selector: 'landing-page-panel',
+        templateUrl: 'app/landing-page-panel/landing-page-panel.component.html'
     }),
     __metadata("design:paramtypes", [])
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+], LandingPagePanelComponent);
+exports.LandingPagePanelComponent = LandingPagePanelComponent;
+//# sourceMappingURL=landing-page-panel.component.js.map

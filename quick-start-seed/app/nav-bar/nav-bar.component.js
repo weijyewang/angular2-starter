@@ -9,19 +9,26 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var AppComponent = (function () {
-    function AppComponent() {
-        this.name = 'Angular';
-        this.excitementLevel = 200;
+var NavBarComponent = (function () {
+    function NavBarComponent() {
     }
-    return AppComponent;
+    NavBarComponent.prototype.myFunction = function () {
+        var x = document.getElementById("navBar");
+        if (x.className === "nav-bar") {
+            x.className += " responsive";
+        }
+        else {
+            x.className = "nav-bar";
+        }
+    };
+    return NavBarComponent;
 }());
-AppComponent = __decorate([
+NavBarComponent = __decorate([
     core_1.Component({
-        selector: 'my-app',
-        templateUrl: 'app/app.component.html'
+        selector: 'nav-bar',
+        templateUrl: 'app/nav-bar/nav-bar.component.html'
     }),
     __metadata("design:paramtypes", [])
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+], NavBarComponent);
+exports.NavBarComponent = NavBarComponent;
+//# sourceMappingURL=nav-bar.component.js.map
