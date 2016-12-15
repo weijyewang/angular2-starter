@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'landing-page-panel',
   templateUrl: 'app/landing-page-panel/landing-page-panel.component.html'
 })
 export class LandingPagePanelComponent  {
-  icon = '';
-  title = 'bla';
-  description = '';
+  @Input() faClassName: string;
+  @Input() title: string;
+  @Input() description: string;
 }

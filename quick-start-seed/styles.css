@@ -1,7 +1,7 @@
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  color: #282828;
+  font-size: 16px;
+  color: #4b4b4b;
   margin: 0;
 }
 
@@ -108,6 +108,79 @@ ul.nav-bar > li.app-title > a:hover {
   }
 }
 
+
+.landing-page-title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 2em;
+}
+
+.landing-page-description {
+  text-align: center;
+  font-size: 1.3em;
+  margin: 0 5em;
+}
+
+.panels-container {
+  padding: 5px 20px;
+}
+
+.panel-row {
+  display: flex;
+  margin-top: 40px;
+}
+
+.panel-item {
+  flex: 1;
+}
+
+.landing-page-panel-container {
+  text-align: center;
+  margin: 10px 20px;
+}
+
+.landing-page-panel-container .panel-title {
+  background-color: rgba(238, 238, 238, 0.8);
+  padding: 5px 7px;
+  margin: 15px 0;
+  color: #414141;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.footer-container {
+  border: 1px solid rgba(238, 238, 238, 0.8);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: right;
+  background-color: rgba(238, 238, 238, 0.2);
+}
+
+.footer-content {
+  color: #666;
+  font-size: 12px;
+}
+
+a {
+  transition: color .4s;
+  color: #265C83;
+}
+
+a:link,
+a:visited { color: #265C83; }
+a:hover   { color: #7FDBFF; }
+a:active  {
+  transition: color .3s;
+  color: #007BE6;
+}
+.link {
+  font-weight: bold;
+  color: #007BE6;
+  text-decoration: none;
+}
 
 h1 {
   color: #369;

@@ -8,21 +8,30 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require("@angular/core");
+var core_1 = require('@angular/core');
 var LandingPagePanelComponent = (function () {
     function LandingPagePanelComponent() {
-        this.icon = '';
-        this.title = 'bla';
-        this.description = '';
     }
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', String)
+    ], LandingPagePanelComponent.prototype, "faClassName", void 0);
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', String)
+    ], LandingPagePanelComponent.prototype, "title", void 0);
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', String)
+    ], LandingPagePanelComponent.prototype, "description", void 0);
+    LandingPagePanelComponent = __decorate([
+        core_1.Component({
+            selector: 'landing-page-panel',
+            templateUrl: 'app/landing-page-panel/landing-page-panel.component.html'
+        }), 
+        __metadata('design:paramtypes', [])
+    ], LandingPagePanelComponent);
     return LandingPagePanelComponent;
 }());
-LandingPagePanelComponent = __decorate([
-    core_1.Component({
-        selector: 'landing-page-panel',
-        templateUrl: 'app/landing-page-panel/landing-page-panel.component.html'
-    }),
-    __metadata("design:paramtypes", [])
-], LandingPagePanelComponent);
 exports.LandingPagePanelComponent = LandingPagePanelComponent;
 //# sourceMappingURL=landing-page-panel.component.js.map
